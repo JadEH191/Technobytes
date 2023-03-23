@@ -61,26 +61,34 @@
         android:id="@+id/price"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
         android:text="$199"
         android:textColor="@color/black"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="203dp"
-        tools:layout_editor_absoluteY="447dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="296dp"
         android:layout_height="195dp"
+        android:layout_marginBottom="116dp"
         android:text="In Android Studio, open the Database Inspector with View > Tool Windows > Database Inspector. You should see a new tab at the bottom labeled &quot;Database Inspector.&quot; It may take a few seconds to load, but you should see a list on the left with the data tables, which you can select to run queries against."
-        tools:layout_editor_absoluteX="37dp"
-        tools:layout_editor_absoluteY="532dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="116dp"
         android:layout_height="38dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="4dp"
         android:text="Add to cart"
         android:textSize="10sp"
-        tools:layout_editor_absoluteX="261dp"
-        tools:layout_editor_absoluteY="447dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 </androidx.constraintlayout.widget.ConstraintLayout>
