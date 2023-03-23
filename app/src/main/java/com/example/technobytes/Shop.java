@@ -42,7 +42,7 @@ public class Shop extends AppCompatActivity {
         items.add(new Items("Test name", "test Description", "test Price", R.drawable.slide2));
         items.add(new Items("Test name", "test Description", "test Price", R.drawable.slide2));
         items.add(new Items("Test name", "test Description", "test Price", R.drawable.slide2));
-        items.add(new Items("Test name", "test Description", "test Price", R.drawable.slide2));
+        items.add(new Items("Test name", "test Description", "test Price", R.drawable.slide5));
 
         rvProduct.setLayoutManager(new LinearLayoutManager(this));
         rvProduct.setAdapter(new Adapter(getApplicationContext(), items));
