@@ -38,12 +38,13 @@ public class Register extends AppCompatActivity {
                         Toast.makeText(Register.this, "Please fill up Password", Toast.LENGTH_SHORT).show();
                     }
                 } else {
-
                     toMain();
                     Toast.makeText(Register.this, "Registered Successfully", Toast.LENGTH_SHORT).show();
                     userInfo.setUsername(getName);
                     userInfo.setPassword(getPassword);
                     System.out.println(userInfo.getUsername() + " " + userInfo.getPassword());
+
+
                 }
             }
         });
@@ -52,6 +53,10 @@ public class Register extends AppCompatActivity {
     public void toMain() {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
+
+        getIntent().putExtra("username", getName);
+        getIntent().putExtra("password", getPassword);
+
         finish();
     }
 }
