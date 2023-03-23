@@ -23,10 +23,26 @@ public class Shop extends AppCompatActivity {
 
         List<Items> items = new ArrayList<Items>();
 
-        items.add(new Items("Test name", "test Description", "test Price", R.drawable.slide4));
-        items.add(new Items("Test name", "test Description", "test Price", R.drawable.slide4));
-        items.add(new Items("Test name", "test Description", "test Price", R.drawable.slide4));
-        items.add(new Items("Test name", "test Description", "test Price", R.drawable.slide4));
+        items.add(new Items("Test name", "test Description", "test Price", R.drawable.slide2));
+        items.add(new Items("Test name", "test Description", "test Price", R.drawable.slide2));
+        items.add(new Items("Test name", "test Description", "test Price", R.drawable.slide2));
+        items.add(new Items("Test name", "test Description", "test Price", R.drawable.slide2));
+        items.add(new Items("Test name", "test Description", "test Price", R.drawable.slide2));
+        items.add(new Items("Test name", "test Description", "test Price", R.drawable.slide2));
+        items.add(new Items("Test name", "test Description", "test Price", R.drawable.slide2));
+        items.add(new Items("Test name", "test Description", "test Price", R.drawable.slide2));
+        items.add(new Items("Test name", "test Description", "test Price", R.drawable.slide2));
+        items.add(new Items("Test name", "test Description", "test Price", R.drawable.slide2));
+        items.add(new Items("Test name", "test Description", "test Price", R.drawable.slide2));
+        items.add(new Items("Test name", "test Description", "test Price", R.drawable.slide2));
+        items.add(new Items("Test name", "test Description", "test Price", R.drawable.slide2));
+        items.add(new Items("Test name", "test Description", "test Price", R.drawable.slide2));
+        items.add(new Items("Test name", "test Description", "test Price", R.drawable.slide2));
+        items.add(new Items("Test name", "test Description", "test Price", R.drawable.slide2));
+        items.add(new Items("Test name", "test Description", "test Price", R.drawable.slide2));
+        items.add(new Items("Test name", "test Description", "test Price", R.drawable.slide2));
+        items.add(new Items("Test name", "test Description", "test Price", R.drawable.slide2));
+        items.add(new Items("Test name", "test Description", "test Price", R.drawable.slide2));
 
         rvProduct.setLayoutManager(new LinearLayoutManager(this));
         rvProduct.setAdapter(new Adapter(getApplicationContext(), items));

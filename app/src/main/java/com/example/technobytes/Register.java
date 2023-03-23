@@ -43,7 +43,6 @@ public class Register extends AppCompatActivity {
                         Toast.makeText(Register.this, "Please fill up Password", Toast.LENGTH_SHORT).show();
                     }
                 } else {
-
                     Toast.makeText(Register.this, "Registered Successfully", Toast.LENGTH_SHORT).show();
 
                     System.out.println(userInfo.getUsername() + " " + userInfo.getPassword());
