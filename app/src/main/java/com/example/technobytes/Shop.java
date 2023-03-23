@@ -30,26 +30,13 @@ public class Shop extends AppCompatActivity {
 
         List<Items> items = new ArrayList<Items>();
 
-        items.add(new Items("Test name", "test Description", "test Price", R.drawable.slide2));
-        items.add(new Items("Test name", "test Description", "test Price", R.drawable.slide2));
-        items.add(new Items("Test name", "test Description", "test Price", R.drawable.slide2));
-        items.add(new Items("Test name", "test Description", "test Price", R.drawable.slide2));
-        items.add(new Items("Test name", "test Description", "test Price", R.drawable.slide2));
-        items.add(new Items("Test name", "test Description", "test Price", R.drawable.slide2));
-        items.add(new Items("Test name", "test Description", "test Price", R.drawable.slide2));
-        items.add(new Items("Test name", "test Description", "test Price", R.drawable.slide2));
-        items.add(new Items("Test name", "test Description", "test Price", R.drawable.slide2));
-        items.add(new Items("Test name", "test Description", "test Price", R.drawable.slide2));
-        items.add(new Items("Test name", "test Description", "test Price", R.drawable.slide2));
-        items.add(new Items("Test name", "test Description", "test Price", R.drawable.slide2));
-        items.add(new Items("Test name", "test Description", "test Price", R.drawable.slide2));
-        items.add(new Items("Test name", "test Description", "test Price", R.drawable.slide2));
-        items.add(new Items("Test name", "test Description", "test Price", R.drawable.slide2));
-        items.add(new Items("Test name", "test Description", "test Price", R.drawable.slide2));
-        items.add(new Items("Test name", "test Description", "test Price", R.drawable.slide2));
-        items.add(new Items("Test name", "test Description", "test Price", R.drawable.slide2));
-        items.add(new Items("Test name", "test Description", "test Price", R.drawable.slide2));
-        items.add(new Items("Test name", "test Description", "test Price", R.drawable.slide5));
+        items.add(new Items("Ostrich Laptop", "test Description", "P 10,000", R.drawable.slide2));
+        items.add(new Items("Mountain Laptop", "test Description", "P 8,000", R.drawable.slide3));
+        items.add(new Items("Small Mountain Laptop", "test Description", "P 11,000", R.drawable.slide4));
+        items.add(new Items("Xbox Controller", "test Description", "P 2,000", R.drawable.slide5));
+        items.add(new Items("Test name", "test Description", "P 15,000", R.drawable.slide2));
+        items.add(new Items("Test name", "test Description", "P 9,000", R.drawable.slide2));
+        items.add(new Items("Owl Laptop", "test Description", "P 7,000", R.drawable.slide9));
 
         rvProduct.setLayoutManager(new LinearLayoutManager(this));
         rvProduct.setAdapter(new Adapter(getApplicationContext(), items));
