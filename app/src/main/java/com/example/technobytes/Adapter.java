@@ -14,7 +14,7 @@ public class Adapter extends RecyclerView.Adapter<ViewHolder> {
     Context context;
     List<Items> items;
 
-    public void myAdapter(Context context, List<Items> items) {
+    public Adapter(Context context, List<Items> items) {
         this.context = context;
         this.items = items;
     }
@@ -26,7 +26,7 @@ public class Adapter extends RecyclerView.Adapter<ViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.
+
     }
 
     @Override
