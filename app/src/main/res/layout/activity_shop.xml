@@ -90,6 +90,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/bag"
+        android:onClick="AddtoCart"
         android:background="@drawable/circle"
         android:padding="5sp"/>
 
