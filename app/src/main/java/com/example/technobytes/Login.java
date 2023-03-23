@@ -9,12 +9,17 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class Login extends AppCompatActivity {
 
     EditText etName, etPassword;
     Button btnConfirm;
 
     String getName, getPassword;
+
+    DatabaseReference fbDatabase = FirebaseDatabase.getInstance().getReferenceFromUrl("https://technobytes-363c1-default-rtdb.firebaseio.com/");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

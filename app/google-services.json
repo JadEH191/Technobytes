@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "980369154071",
+    "project_id": "technobytes-363c1",
+    "storage_bucket": "technobytes-363c1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:980369154071:android:f1c0d6f39e2ea04f53bc52",
+        "android_client_info": {
+          "package_name": "com.example.technobytes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "980369154071-lji38odmvdopjcqunb8gfckkb1b6olmr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGbgZ6GRWBeL4PCIvo3FKcQDMOWfY_gOQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "980369154071-lji38odmvdopjcqunb8gfckkb1b6olmr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
