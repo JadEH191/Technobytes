@@ -19,7 +19,7 @@ public class Register extends AppCompatActivity {
 
     String getName, getPassword;
 
-    DatabaseReference fbDatabase = FirebaseDatabase.getInstance().getReferenceFromUrl("https://technobytes-363c1-default-rtdb.firebaseio.com/");
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,8 +44,6 @@ public class Register extends AppCompatActivity {
                     }
                 } else {
 
-                    fbDatabase.child("Users").child(getName).child("username").setValue(getName);
-                    fbDatabase.child("Users").child(getName).child("password").setValue(getPassword);
                     Toast.makeText(Register.this, "Registered Successfully", Toast.LENGTH_SHORT).show();
 
                     System.out.println(userInfo.getUsername() + " " + userInfo.getPassword());
