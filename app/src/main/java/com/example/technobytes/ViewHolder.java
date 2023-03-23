@@ -31,17 +31,12 @@ public class ViewHolder extends RecyclerView.ViewHolder {
             }
         });
 
-
-
         hitbox.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
             }
         });
-
-    }
-    public void PopUp(View v){
 
     }
 }
