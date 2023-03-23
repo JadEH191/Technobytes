@@ -45,12 +45,11 @@ public class Register extends AppCompatActivity {
                 } else {
 
                     fbDatabase.child("Users").child(getName).child("username").setValue(getName);
-
-                    toMain();
+                    fbDatabase.child("Users").child(getName).child("password").setValue(getPassword);
                     Toast.makeText(Register.this, "Registered Successfully", Toast.LENGTH_SHORT).show();
-                    userInfo.setUsername(getName);
-                    userInfo.setPassword(getPassword);
+
                     System.out.println(userInfo.getUsername() + " " + userInfo.getPassword());
+                    toMain();
                 }
             }
         });
