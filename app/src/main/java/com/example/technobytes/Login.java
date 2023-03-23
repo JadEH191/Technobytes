@@ -45,9 +45,7 @@ public class Login extends AppCompatActivity {
                     String getPass = userInfo.getPassword();
 
                     if (!(getName.equals(getUsername)) || !(getPassword.equals(getPass))) {
-                        if (!(getName.equals(getUsername)) || !(getPassword.equals(getPass))) {
-                            Toast.makeText(Login.this, "Incorrect Username and Password", Toast.LENGTH_SHORT).show();
-                        } else if (!(getName.equals(getUsername))) {
+                        if (!(getName.equals(getUsername))) {
                             Toast.makeText(Login.this, "Incorrect Username", Toast.LENGTH_SHORT).show();
                         } else if (!(getPassword.equals(getPass))) {
                             Toast.makeText(Login.this, "Incorrect Password", Toast.LENGTH_SHORT).show();
