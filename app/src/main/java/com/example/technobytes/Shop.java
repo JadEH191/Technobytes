@@ -1,9 +1,15 @@
 package com.example.technobytes;
 
+import androidx.annotation.DrawableRes;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Shop extends AppCompatActivity {
 
@@ -15,6 +21,14 @@ public class Shop extends AppCompatActivity {
 
         rvProduct = findViewById(R.id.rvProduct);
 
+        List<Items> items = new ArrayList<Items>();
 
+        items.add(new Items("Test name", "test Description", "test Price", R.drawable.slide4));
+        items.add(new Items("Test name", "test Description", "test Price", R.drawable.slide4));
+        items.add(new Items("Test name", "test Description", "test Price", R.drawable.slide4));
+        items.add(new Items("Test name", "test Description", "test Price", R.drawable.slide4));
+
+        rvProduct.setLayoutManager(new LinearLayoutManager(this));
+        rvProduct.setAdapter(new Adapter(getApplicationContext(), items));
     }
 }
