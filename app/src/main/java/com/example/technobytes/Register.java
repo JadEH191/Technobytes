@@ -9,12 +9,17 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class Register extends AppCompatActivity {
 
     EditText etName, etPassword;
     Button btnConfirm;
 
     String getName, getPassword;
+
+    DatabaseReference fbDatabase = FirebaseDatabase.getInstance().getReferenceFromUrl("https://technobytes-363c1-default-rtdb.firebaseio.com/");
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,13 +43,14 @@ public class Register extends AppCompatActivity {
                         Toast.makeText(Register.this, "Please fill up Password", Toast.LENGTH_SHORT).show();
                     }
                 } else {
+
+                    fbDatabase.child("Users").child(getName).child("username").setValue(getName);
+
                     toMain();
                     Toast.makeText(Register.this, "Registered Successfully", Toast.LENGTH_SHORT).show();
                     userInfo.setUsername(getName);
                     userInfo.setPassword(getPassword);
                     System.out.println(userInfo.getUsername() + " " + userInfo.getPassword());
-
-
                 }
             }
         });
