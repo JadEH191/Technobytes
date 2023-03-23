@@ -23,16 +23,6 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.044" />
 
-        <TextView
-            android:id="@+id/hitbox"
-            android:layout_width="328dp"
-            android:layout_height="109dp"
-            android:text="TextView"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="1dp" />
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ImageView

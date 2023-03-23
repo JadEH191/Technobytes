@@ -23,6 +23,7 @@ public class Register extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         UserInfo userInfo = new UserInfo();
         setContentView(R.layout.activity_register);
 

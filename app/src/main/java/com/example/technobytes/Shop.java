@@ -1,6 +1,7 @@
 package com.example.technobytes;
 
 import androidx.annotation.DrawableRes;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -14,6 +15,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.PopupWindow;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,6 +25,8 @@ public class Shop extends AppCompatActivity {
     RecyclerView rvProduct;
 
     ImageView btnToCart;
+    TextView hitbox, ostrich;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +34,18 @@ public class Shop extends AppCompatActivity {
 
         rvProduct = findViewById(R.id.rvProduct);
         btnToCart = findViewById(R.id.btnToCart);
+        ostrich = findViewById(R.id.ostrich);
+
+        ostrich.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                toLaptop1();
+            }
+        });
+
+        LayoutInflater inflater = LayoutInflater.from(this);
+        View product = inflater.inflate(R.layout.shop_items_card, null);
+        hitbox = product.findViewById(R.id.hitbox);
 
         List<Items> items = new ArrayList<Items>();
 
@@ -50,6 +66,8 @@ public class Shop extends AppCompatActivity {
                 toMyCart();
             }
         });
+
+
     }
 
     public void toMyCart() {
@@ -57,11 +75,21 @@ public class Shop extends AppCompatActivity {
         startActivity(intent);
 
     }
-    public void AddtoCart(View view){
+
+    public void toLaptop1() {
+        Intent intent = new Intent(this, Laptop1.class);
+        startActivity(intent);
+
+    }
+
+
+    public void AddtoCart(View view) {
         LayoutInflater layoutInflater = (LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);
 
         View viewpopup = layoutInflater.inflate(R.layout.product_details, null);
-        PopupWindow popupWindow = new PopupWindow(viewpopup, 900, 1000);
+        final PopupWindow popupWindow = new PopupWindow(viewpopup, 900, 1000);
         popupWindow.showAtLocation(view, Gravity.TOP, 0, 0);
+
+        System.out.println("test");
     }
 }

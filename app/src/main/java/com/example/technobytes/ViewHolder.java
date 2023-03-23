@@ -1,16 +1,20 @@
 package com.example.technobytes;
 
+import android.content.Intent;
 import android.media.Image;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.PopupWindow;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class ViewHolder extends RecyclerView.ViewHolder {
+
 
     TextView tvProductName, tvProductDescription, tvProductPrice, hitbox;
     ImageView ivProductImage, btnCart;
@@ -34,7 +38,13 @@ public class ViewHolder extends RecyclerView.ViewHolder {
         hitbox.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String getProductName = tvProductName.getText().toString();
+                System.out.println(tvProductName.getText().toString());
 
+
+                if(getProductName.equals("Ostrich Laptop")) {
+
+                }
             }
         });
 
