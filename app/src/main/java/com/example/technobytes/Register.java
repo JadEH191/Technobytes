@@ -18,6 +18,7 @@ public class Register extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        UserInfo userInfo = new UserInfo();
         setContentView(R.layout.activity_register);
 
         etName = findViewById(R.id.etName);
@@ -39,7 +40,9 @@ public class Register extends AppCompatActivity {
                 } else {
                     System.out.println(getName + " " + getPassword);
                     toMain();
-                    Toast.makeText(Register.this, "Registered Successfuly", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Register.this, "Registered Successfully", Toast.LENGTH_SHORT).show();
+                    userInfo.setUsername(getName);
+                    userInfo.setPassword(getPassword);
                 }
             }
         });
